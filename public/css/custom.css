@@ -1,0 +1,101 @@
+/*! Place your custom styles here */
+
+[data-overlay]:before {
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bar .logo {
+  max-height: none;
+  max-width: none;
+}
+
+.bar .logo {
+  top: 0px;
+}
+
+.menu-horizontal > .dropdown > .dropdown__trigger:after {
+  content: none;
+  margin-left: 4px;
+}
+
+/**! 10. Menus **/
+.menu-horizontal > li:not(:hover) > a,
+.menu-horizontal > li:not(:hover) > span,
+.menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
+  opacity: 100;
+}
+
+.menu-horizontal > li > a,
+.menu-horizontal > li > span,
+.menu-horizontal > li > .modal-instance > .modal-trigger {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  color: #4565ac;
+}
+
+.menu-horizontal > li > a:hover,
+.menu-horizontal > li > span:hover,
+.menu-horizontal > li > .modal-instance > .modal-trigger:hover {
+  color: #dddddd;
+}
+
+@media all and (min-width: 990px) {
+  .menu-horizontal li:not(:last-child) {
+    margin-right: 3em;
+  }
+  .bar__module:not(:only-child) .menu-horizontal {
+    top: 0;
+  }
+}
+
+.menu-horizontal > li > a,
+.menu-horizontal > li > .modal-instance > a {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+@media all and (max-width: 767px) {
+  .height-100,
+  .height-90,
+  .height-80,
+  .height-70,
+  .height-60,
+  .height-50,
+  .height-40,
+  .height-30,
+  .height-20,
+  .height-10 {
+    height: auto;
+    padding: 10em 0;
+  }
+}
+
+.bar .menu-horizontal {
+  line-height: 2.5em;
+}
+
+@media all and (max-width: 767px) {
+  .bar__module {
+    margin-bottom: 1.928571em;
+  }
+}
+
+.back-to-top {
+  background: #4565ac;
+}
+
+.back-to-top i {
+  color: #fff;
+}
+
+.text-dark {
+  color: #000;
+}
